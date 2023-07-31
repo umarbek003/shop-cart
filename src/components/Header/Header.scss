@@ -1,0 +1,81 @@
+
+.shapka{
+    background: var(--darkGreen);
+    color: var(--color);
+
+    .block-shapka {
+        padding: 5px;
+        font-size: 14px;
+
+        .block-language {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 12px;
+        }
+        .phone{
+            gap: 5px;
+        }
+        .light-theme{
+            gap: 10px;
+        }
+        .light{
+            border-right: 1px solid var(--color);
+        }
+        .language{
+           gap: 5px;
+        }
+
+        .location{
+            gap: 5px;
+        }
+    }
+}
+
+
+.block-header{
+    padding: 20px 0;
+    background: var(--bg-color);
+    ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+        font-size: 14px;
+        
+        li:hover{
+            transform: scale(1.03);
+            transition: all ease-in-out .3s;
+            color:var(--darkGreen);
+            }
+    
+    }
+    .search-block{
+        gap: 40px;
+    }
+    .search-product{
+        position: relative;
+        input{
+            font-size: 13px;
+            padding: 8px 35px 8px 20px;
+            width: 300px;
+            border-radius: 20px;
+            border: none;
+            background: var(--gray);
+        }
+        .search-icons{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+
+        }
+    }
+
+    .user{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        gap: 5px;
+        font-size: 14px;
+    }
+}

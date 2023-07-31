@@ -1,0 +1,40 @@
+.block-content{
+    background: var(--pink);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    img{
+        width: 400px;
+    }
+
+    .content-title{
+        h2{
+            font-size: 40px;
+            color: var( --darkGreen);
+        }
+        button{
+            padding:  15px 50px;
+            margin-top: 40px;
+            border-radius: 30px;
+            background: var(--darkGreen);
+            color: var(--color);
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+.content-button{
+    padding-top: 2rem;
+    
+}
+
+.card-content{
+    padding-top: 55px;
+}
