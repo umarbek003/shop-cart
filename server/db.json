@@ -1,0 +1,32 @@
+{
+ "product" : [
+        {
+            "id":1,
+            "title":"Wireless Earpuds, IPX8",
+            "image": "/img/image-removebg-preview.png",
+            "description":"Organic Cotton, faitrade certified",
+            "price":89
+        },
+        {
+            "id":2,
+            "title":"Airpods Max",
+            "image": "/img/airpodsmax.png",
+            "description":"A perfect balance of hight-fidelity audio",
+            "price":559
+        },
+        {
+            "id":4,
+            "title":"Bose BT Earphones",
+            "image": "/img/bose.png",
+            "description":"Table with air purifier, stained verner/black",
+            "price":289
+        },
+        {
+            "id":5,
+            "title":"JBL TUNE 600BTNC",
+            "image": "/img/jbtune600btnc.png",
+            "description":"Premium Bone Conduction Open Ear Bluetooth",
+            "price":250
+        }
+    ]
+}

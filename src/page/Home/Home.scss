@@ -35,6 +35,13 @@
     
 }
 
+.card-content-title{
+    padding-top: 55px;
+}
+
 .card-content{
     padding-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

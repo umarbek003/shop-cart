@@ -2,7 +2,7 @@ import Card from "../../components/Card/Card";
 import CategoriesButton from "../../components/CategoriesButton/CategoriesButton";
 import "./Home.scss";
 
-const Home = () => {
+const Home = ({item, onAddToCart}) => {
   return (
     <div className="content">
       <div className="container">
@@ -11,17 +11,21 @@ const Home = () => {
             <h2>Grab Upto 50% Off On Selected Headphone</h2>
             <button>Buy Now</button>
           </div>
-          <img src="/public/assets/girlheadphone.png" alt="" />
+          <img src="/img/girlheadphone.png" alt="" />
         </div>
 
         <div className="content-button">
           <CategoriesButton />
         </div>
 
-        <div className="card-content">
+        <div className="card-content-title">
           <h1>Headphones For You!</h1>
         <div className="card-content">
-          <Card />
+          {
+            item.map(el =>(
+              <Card key={el.id} onAddToCart={onAddToCart} product={el}/>
+            ))
+          }
         </div>
         </div>
 

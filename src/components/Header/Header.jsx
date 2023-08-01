@@ -1,9 +1,10 @@
 import { BsTelephone, BsChevronDown } from "react-icons/bs";
 import { GoSearch } from "react-icons/go";
 import { AiOutlineUser } from "react-icons/ai";
-import {TbShoppingCartPlus} from 'react-icons/tb'
+import { TbShoppingCartPlus } from "react-icons/tb";
 import List from "./NavLink/List";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -35,25 +36,30 @@ const Header = () => {
       </div>
       <div className="container">
         <div className="block-header clear d-flex justify-between align-center">
-              <div className="logo">LOGO</div>
-              <nav>
-                <List />
-              </nav>
+          <Link to="/"><div className="logo"><img width={60} src="/img/logo.png" alt="" /><span>Shopcart</span></div></Link>
+          <nav>
+            <List />
+          </nav>
           <div className="search-block d-flex justify-between align-center">
             <div className="search-product">
               <input type="text" placeholder="Search product..." />
               <GoSearch className="search-icons" />
             </div>
-            <div style={{
-              gap: '20px'
-            }} className="d-flex justify-between">
+            <div
+              style={{
+                gap: "20px",
+              }}
+              className="d-flex justify-between"
+            >
               <div className="user">
                 <AiOutlineUser />
                 <span>Account</span>
               </div>
               <div className="user">
-                <TbShoppingCartPlus />
-                <span>Cart</span>
+                <Link to="cart">
+                  <TbShoppingCartPlus />
+                  <span>Cart</span>
+                </Link>
               </div>
             </div>
           </div>
